@@ -16,6 +16,19 @@ The essential prerequisites for the application are as follows:
 
 >-can see the location of the city Using a map to locate a city's details
 
+## Used resources
+
+>    IDE :Android Studio
+>    
+>    Programing Language : Kotlin
+>    
+>    Icons:https://iconarchive.com/
+>    
+>    Data api:https://api.npoint.io/b861495b4fbec4288baa/
+>    
+
+
+
 ## package hierarchy
 
 
