@@ -22,16 +22,24 @@ The essential prerequisites for the application are as follows:
 >    
 >    Programing Language : Kotlin
 >    
->    Icons:https://iconarchive.com/
+>    Icons : https://iconarchive.com/
 >    
->    Data api:https://api.npoint.io/b861495b4fbec4288baa/
+>    api Host :https://www.npoint.io/
 >    
+>    Sample Data : https://simplemaps.com/data/world-cities
 
+## demo 
+
+
+![Layouts](https://user-images.githubusercontent.com/73293868/162576945-a1b4d8f4-bf1f-41d8-b182-05e780b5dc1d.png)
+
+
+
+
+Uploading Demo.mp4…
 
 
 ## package hierarchy
-
-
 
 
 ```bash
