@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="400dp"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:text="Update City"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CountryView"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Country :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityView" />
+
+    <TextView
+        android:id="@+id/lat_View"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Latitude :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CountryView" />
+
+    <TextView
+        android:id="@+id/lng_view"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Longitude:"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lat_View" />
+
+    <TextView
+        android:id="@+id/cityView"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="City :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IDView" />
+
+    <TextView
+        android:id="@+id/IDView"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="ID :"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/idView2"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="100"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/IDView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editCity"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:hint="Colombo"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/cityView"
+        app:layout_constraintTop_toBottomOf="@+id/idView2" />
+
+    <EditText
+        android:id="@+id/editCountry"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:hint="Sri Lanka"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/CountryView"
+        app:layout_constraintTop_toBottomOf="@+id/editCity" />
+
+    <EditText
+        android:id="@+id/editLat"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:hint="5.154825"
+        android:inputType="textPersonName|numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/lat_View"
+        app:layout_constraintTop_toBottomOf="@+id/editCountry" />
+
+    <EditText
+        android:id="@+id/lngEdit"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:hint="5.154825"
+        android:inputType="numberDecimal|numberSigned"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/lng_view"
+        app:layout_constraintTop_toBottomOf="@+id/editLat" />
+
+    <Button
+        android:id="@+id/Save_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:textColor="@color/black"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/Close_Button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FBFBFB"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintBottom_toTopOf="@+id/idView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:tint="@color/seffron" />
+</androidx.constraintlayout.widget.ConstraintLayout>

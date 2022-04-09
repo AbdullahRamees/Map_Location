@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.map.MapsFragment"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:paddingRight="10dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:layout_width="149dp"
+        android:layout_height="136dp"
+        android:id="@+id/radio"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/maptype1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="ROADMAP"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/maptype2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="SATELLITE"
+            />
+
+        <RadioButton
+            android:id="@+id/maptype3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="HYBRID" />
+
+        <RadioButton
+            android:id="@+id/maptype4"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="TERRAIN" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
